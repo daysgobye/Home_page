@@ -5,39 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>home page</title>
+    <title>Dev Portal</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="jumbotron">
-            <h1></h1>
+            <h1>Dev Portal</h1>
+            <h2>a nice place to start your adventure</h2>
         </div>
         <div class="search">
             <!-- <iframe kp= -2 k7= p kea= r src="https://duckduckgo.com/search.html?prefill=a DuckDuckGo search for you to use "></iframe> -->
             <form action="search" method="get" action="https://duckduckgo.com/?q=search&kp=-1&kl=us-en">
-                <input  name="q" type="text">
-                <input type="submit" value="Go!">
+                <input class="search__bar" name="q" type="text">
+                <input class="search__btn" type="submit" value="Go!">
             </form>
         </div>
         <nav class="links">
-            <ul class="links__webHelp"></ul>
-            <ul class="links__editors"></ul>
-            <ul class="links__learning"></ul>
-            <ul class="links__hosting"></ul>
-            <ul class="links__fun"></ul>
+            <ul>
+            <li class="links__webHelp">dev help
+              <ul>
+                    <a href=""><li>site 1</li></a>
+                    <a href=""><li>site 2</li></a>  
+                </ul>  
+            </li>
+            <li class="links__editors"> tools
+                <ul>
+                    <a href=""><li>site 1</li></a>
+                    <a href=""><li>site 2</li></a>  
+                </ul>
+            </li>
+            <li class="links__learning"> learning 
+                <ul>
+                    <a href=""><li>site 1</li></a>
+                    <a href=""><li>site 2</li></a>  
+                </ul>
+            </li>
+            <li class="links__hosting"> hosting
+                <ul>
+                    <a href=""><li>site 1</li></a>
+                    <a href=""><li>site 2</li></a>  
+                </ul>
+            </li>
+            <li class="links__fun"> fun
+                <ul>
+                    <a href=""><li>site 1</li></a>
+                    <a href=""><li>site 2</li></a>  
+                </ul>
+            </li>
+            </ul>
         </nav>
         <div class="apps">
+            
             <div class="apps__note">
+                <div class="apps__note__headder">
+                    <div class="apps__note__headder--dots">
+                        <div class="dots"></div>
+                    </div>
+                    <h2>Notes</h2> 
+                </div>
                 <textarea class="apps__note--text" name="" id="" cols="30" rows="10" placeholder="take some notes dont worry we'll save them"></textarea>
             </div>
             <div class="apps__todo">
+                <div class="apps__todo__headder">
+                    <div class="apps__todo__headder--dots">
+                        <div class="dots"></div>
+                    </div>
+                   <h2>To do</h2> 
+                </div>
+                
                 <ul class="apps__todo--list" >
                     <li>Nothing to do!</li>
                 </ul>
-                <form class="apps__todo--add">
+                <div class="apps__todo--inputs">
+                    <form class="apps__todo--add">
                     <input type="text" name="item" placeholder="todo item" required>
-                    <input type="submit" value="one more!">
-                </form>
+                        <input type="submit" value="one more!">
+                    </form>
+                    <button class="cleartodo">trash</button>
+                </div>
+                
             </div>
         </div>
         
