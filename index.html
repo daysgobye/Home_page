@@ -15,10 +15,15 @@
         </div>
         <div class="search">
             <!-- <iframe kp= -2 k7= p kea= r src="https://duckduckgo.com/search.html?prefill=a DuckDuckGo search for you to use "></iframe> -->
-            <form action="search" method="get" action="https://duckduckgo.com/?q=search&kp=-1&kl=us-en">
-                <input class="search__bar" name="q" type="text">
-                <input class="search__btn" type="submit" value="Go!">
+            <form method="get" action="https://www.google.com/search" name="searchform" target="_blank">
+                <input class="search__bar" name="q" type="text" placeholder="google it">
+                <input class="search__btn" type="submit" value="">
             </form>
+            <!-- <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="google.com">
+                <input autocomplete="on" class="form-control search" name="q" placeholder="Search in google" required="required"  type="text">
+                <button class="button" type="submit">Search</button>
+            </form> -->
         </div>
         <nav class="links">
             <ul>

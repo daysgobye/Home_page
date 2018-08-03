@@ -4,11 +4,11 @@ const trashTodo = document.querySelector('.cleartodo')
 const pageTitle = document.querySelector('title')
 const todos = JSON.parse(localStorage.getItem('thingTodo')) || [];
 const note = document.querySelector('.apps__note--text')
-let noteText = localStorage.getItem('note') || ""
+let noteText = localStorage.getItem('portalnote') || ""
 //saving notes 
 function saveNote(){
     noteText = note.value
-    localStorage.setItem('note', noteText)
+    localStorage.setItem('portalnote', noteText)
 }
 note.value = noteText
 //todos

@@ -35,8 +35,8 @@
   display: flex;
   width: 50%;
   height: 5%;
-  background: coral;
   margin-top: -100px;
+  border-radius: 4px;
 }
 
 .wrapper .search form {
@@ -45,17 +45,16 @@
 }
 
 .wrapper .search form .search__bar {
-  width: 90%;
+  width: 100%;
   height: 100%;
   border: none;
   outline: none;
-  background: gray;
-  color: red;
+  border-radius: 4px;
+  box-shadow: 0px 0px 32px -7px #615f61;
 }
 
 .wrapper .search form .search__btn {
-  height: 100%;
-  width: 10%;
+  display: none;
 }
 
 .wrapper .links {
@@ -111,6 +110,7 @@
   overflow: scroll;
   background: white;
   border-radius: 11px;
+  box-shadow: 0px 0px 42px -7px #615f61;
 }
 
 .wrapper .apps .apps__todo::-webkit-scrollbar {
@@ -186,6 +186,7 @@
   width: 40%;
   background: white;
   border-radius: 11px;
+  box-shadow: 0px 0px 42px -7px #615f61;
 }
 
 .wrapper .apps .apps__note .apps__note__headder {
